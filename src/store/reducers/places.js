@@ -1,7 +1,7 @@
 import {ADD_PLACE, DELETE_PLACE, DESELECT_PLACE, SELECT_PLACE} from '../actions/actionTypes'; 
 const initState = {
   places: [],
-  selectedPlaces: null
+  selectedPlace: null
 };
 const placeReducer = (state = initState, action) => {
     switch(action.type){
@@ -10,7 +10,7 @@ const placeReducer = (state = initState, action) => {
           ...state,
           places: state.places.concat({
             key: Math.random(),
-            name: action.placesName,
+            name: action.placeName,
             image:{
               uri: "https://s1.stabroeknews.com/images/2015/06/20150622kitty-market.jpg"
             }
@@ -27,8 +27,7 @@ const placeReducer = (state = initState, action) => {
       case SELECT_PLACE:
         return{
           ...state,
-          selectedPlace: state.places.find(
-            place => {
+          selectedPlace: state.places.find( place => {
               return place.key === action.placeKey; 
             }
           )

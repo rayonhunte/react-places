@@ -5,7 +5,7 @@ import ListItem from '../ListItem/ListItem';
 
  
 const ListContainer = props =>{
-
+  console.log(props)
   return(
   <FlatList 
     style={styles.listContainer}

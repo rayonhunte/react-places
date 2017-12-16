@@ -3,6 +3,7 @@ import {ADD_PLACE, DELETE_PLACE, DESELECT_PLACE, SELECT_PLACE } from './actionTy
 
 
 export const addPlace = placeName => {
+  console.log("placename" + placeName)
   return {
     type: ADD_PLACE,
     placeName
@@ -24,6 +25,6 @@ export const selectPlace = key =>{
 
 export const deselectPlace = () =>{
   return {
-    type: DELETE_PLACE
+    type: DESELECT_PLACE
   }
 }
