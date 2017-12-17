@@ -1,5 +1,5 @@
 
-import {ADD_PLACE, DELETE_PLACE, DESELECT_PLACE, SELECT_PLACE } from './actionTypes';
+import {ADD_PLACE, DELETE_PLACE } from './actionTypes';
 
 
 export const addPlace = placeName => {
@@ -15,15 +15,3 @@ export const deletePlace = () => {
   }
 }
 
-export const selectPlace = key =>{
-  return {
-    type: SELECT_PLACE,
-    placeKey: key
-  }
-}
-
-export const deselectPlace = () =>{
-  return {
-    type: DESELECT_PLACE
-  }
-}
