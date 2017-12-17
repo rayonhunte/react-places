@@ -102,6 +102,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f2cf527de8d0bd35d72088fafea02395ba4a9eec">
+        <dex dex="/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/pre-dexed/debug/rncourse-react-native-vector-icons-unspecified_677572b1b6adae92712d673bebcbdc34670dc2d9.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/rayon/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
         jumboMode="false"
         optimize="true"
