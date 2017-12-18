@@ -4,7 +4,8 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 const startTabs = () =>{
   Promise.all([
     Icon.getImageSource("map", 30),
-    Icon.getImageSource("share", 30)
+    Icon.getImageSource("share", 30),
+    Icon.getImageSource("bars", 30)
   ]).then(sources =>{
     Navigation.startTabBasedApp({
       tabs: [
@@ -12,15 +13,38 @@ const startTabs = () =>{
           screen: "awesome-places.FindPlace",
           label: "Find Place",
           title: "Find Place",
-          icon: sources[0]
+          icon: sources[0],
+          navigatorButtons: {
+            leftButtons: [
+              {
+                icon: sources[2],
+                title: "Menu",
+                id: "sideDrawerToggle"
+              }
+            ]
+          }
         },
         {
           screen: "awesome-places.SharePlace",
           label: "Share Place",
           title: "Share Place",
-          icon: sources[1]
+          icon: sources[1],
+          navigatorButtons: {
+            leftButtons: [
+              {
+                icon: sources[2],
+                title: "Menu",
+                id: "sideDrawerToggle"
+              }
+            ]
+          }
         },
-      ]
+      ],
+      drawer:{
+        left:{
+          screen:"awesome-places.SideDrawer",
+        }
+      }
     })
   })
 };
