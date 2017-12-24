@@ -174,20 +174,11 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.50.3/jars/libs/infer-annotations-4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_ab60bcaecf742e1b96cd185d22cb7ae8c054d832.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-navigation/unspecified/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="677324b1efc07f1efc875be13223be440e4478a4">
+        sha1="9b05dccd296ac3aa510bbfb240657bac860779c3">
         <dex dex="/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/pre-dexed/debug/rncourse-react-native-navigation-unspecified_9aac807084868d3ffa9a78dd9b1b44fe11a56ec0.jar" />
     </item>
     <item
@@ -198,15 +189,6 @@
         revision="25.0.1"
         sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
         <dex dex="/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_d02231d4687eec5964fd1a66af5e25513c76b296.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.50.3/jars/libs/infer-annotations-4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_ab60bcaecf742e1b96cd185d22cb7ae8c054d832.jar" />
     </item>
     <item
         is-multidex="false"
@@ -345,6 +327,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.51.0/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_b8ac21db109ddafa9b13289ea2f2c6f7fcc5e4eb.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -378,6 +369,15 @@
         revision="25.0.1"
         sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
         <dex dex="/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_fb8ad09bab3ba478f9041b79142b1f84e2789408.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.51.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="99941aaaf86dc5e525cd9208c2f7c9a624f4f004">
+        <dex dex="/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.51.0_601129cebcd5eff68a438bcbac8b13b60725f007.jar" />
     </item>
     <item
         is-multidex="false"
@@ -417,15 +417,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.50.3/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="24303e5ddb2c1210dd7e8db9dbab018f50313e48">
-        <dex dex="/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.50.3_3821eb9f4b438b03091b3aa8d34cbe4add5b5845.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/rayon/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
         jumboMode="false"
         optimize="true"
@@ -441,15 +432,6 @@
         revision="25.0.1"
         sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
         <dex dex="/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_9f938c80cfb78911e719a1cf4241b3da1206c3b3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.50.3/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="24303e5ddb2c1210dd7e8db9dbab018f50313e48">
-        <dex dex="/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.50.3_3821eb9f4b438b03091b3aa8d34cbe4add5b5845.jar" />
     </item>
     <item
         is-multidex="false"

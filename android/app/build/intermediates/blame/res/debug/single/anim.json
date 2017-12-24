@@ -29,7 +29,7 @@
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/anim/catalyst_push_up_in.xml",
-        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.50.3/res/anim/catalyst_push_up_in.xml"
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.51.0/res/anim/catalyst_push_up_in.xml"
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_out.xml",
@@ -53,7 +53,7 @@
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/anim/catalyst_push_up_out.xml",
-        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.50.3/res/anim/catalyst_push_up_out.xml"
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.51.0/res/anim/catalyst_push_up_out.xml"
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/anim/no_animation.xml",
@@ -61,7 +61,7 @@
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/anim/catalyst_fade_in.xml",
-        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.50.3/res/anim/catalyst_fade_in.xml"
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.51.0/res/anim/catalyst_fade_in.xml"
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/anim/slide_out_right.xml",
@@ -97,7 +97,7 @@
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/anim/catalyst_slide_up.xml",
-        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.50.3/res/anim/catalyst_slide_up.xml"
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.51.0/res/anim/catalyst_slide_up.xml"
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
@@ -105,11 +105,11 @@
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/anim/catalyst_slide_down.xml",
-        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.50.3/res/anim/catalyst_slide_down.xml"
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.51.0/res/anim/catalyst_slide_down.xml"
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/anim/catalyst_fade_out.xml",
-        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.50.3/res/anim/catalyst_fade_out.xml"
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.51.0/res/anim/catalyst_fade_out.xml"
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",

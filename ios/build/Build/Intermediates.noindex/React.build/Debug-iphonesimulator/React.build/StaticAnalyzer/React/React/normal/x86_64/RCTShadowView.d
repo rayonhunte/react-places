@@ -22,4 +22,5 @@ dependencies: \
   /Users/rayon/Documents/react-native/rn-course/node_modules/react-native/React/Views/RCTPointerEvents.h \
   /Users/rayon/Documents/react-native/rn-course/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
   /Users/rayon/Documents/react-native/rn-course/node_modules/react-native/React/Views/UIView+Private.h \
-  /Users/rayon/Documents/react-native/rn-course/node_modules/react-native/React/Views/UIView+React.h
+  /Users/rayon/Documents/react-native/rn-course/node_modules/react-native/React/Views/UIView+React.h \
+  /Users/rayon/Documents/react-native/rn-course/node_modules/react-native/React/Modules/RCTI18nUtil.h

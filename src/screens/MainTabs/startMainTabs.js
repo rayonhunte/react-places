@@ -38,18 +38,18 @@ const startTabs = () =>{
               }
             ]
           }
-        },
+        }
       ],
       tabsStyle:{
         tabBarSelectedButtonColor: "orange"
       },
-      appStyle:{
-        tabBarSelectedButtonColor: "orange"
-      },
       drawer:{
         left:{
-          screen:"awesome-places.SideDrawer",
+          screen: 'awesome-places.SideDrawer',
         }
+      },
+      appStyle:{
+        tabBarSelectedButtonColor: "orange"
       }
     })
   })

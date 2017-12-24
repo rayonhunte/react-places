@@ -16,4 +16,5 @@ dependencies: \
   /Users/rayon/Documents/react-native/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
   /Users/rayon/Documents/react-native/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
   /Users/rayon/Documents/react-native/rn-course/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
-  /Users/rayon/Documents/react-native/rn-course/node_modules/react-native/React/Views/UIView+React.h
+  /Users/rayon/Documents/react-native/rn-course/node_modules/react-native/React/Views/UIView+React.h \
+  /Users/rayon/Documents/react-native/rn-course/node_modules/react-native/React/Modules/RCTI18nUtil.h

@@ -46,14 +46,14 @@ class SharePlace extends Component{
   render(){
     return (
       <ScrollView>
-          <View style={styles.container}>
+          <View>
             <ImagePicker/>
             <LocateMe/>
             <PlaceInput 
               value={this.state.placeName}
               onChangeText={this.placeNameChangedHandler}
               />
-            <View style={Styles.buttonStyle}>
+            <View style={styles.buttonStyle}>
               <Button title="Share Place!" onPress={this.placeAddedHandler}/>
             </View>
           </View>
@@ -68,7 +68,7 @@ const mapDispatchToProps = dispatch =>{
   };
 }
 
-const Styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center"

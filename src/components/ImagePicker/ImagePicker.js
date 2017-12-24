@@ -9,14 +9,14 @@ import imagePlaceHolder from '../../assets/kitty.jpeg';
 class ImagePicker extends Component{
   render(){
     return (
-        <View style={Styles.container}>
+        <View style={styles.container}>
           <MainText>
                 <FormHeader>Share a Place With Us!</FormHeader>
           </MainText>
-          <View style={Styles.placeHolder}> 
-              <Image source={imagePlaceHolder} style={Styles.previewImage}/>
+          <View style={styles.placeHolder}> 
+              <Image source={imagePlaceHolder} style={styles.previewImage}/>
           </View>
-          <View style={Styles.buttonStyle}>
+          <View style={styles.buttonStyle}>
             <Button title="Pick Image" onPress={()=>{alert("pick image")}}/>
           </View>
         </View> 
@@ -25,7 +25,7 @@ class ImagePicker extends Component{
 };
 
 
-const Styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex:1,
     justifyContent: "center",

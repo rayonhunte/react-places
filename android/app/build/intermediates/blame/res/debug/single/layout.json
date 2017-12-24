@@ -21,7 +21,7 @@
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/layout/dev_loading_view.xml",
-        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.50.3/res/layout/dev_loading_view.xml"
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.51.0/res/layout/dev_loading_view.xml"
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/layout/notification_template_media_custom.xml",
@@ -33,7 +33,7 @@
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/layout/fps_view.xml",
-        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.50.3/res/layout/fps_view.xml"
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.51.0/res/layout/fps_view.xml"
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",
@@ -129,7 +129,7 @@
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/layout/redbox_item_title.xml",
-        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.50.3/res/layout/redbox_item_title.xml"
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.51.0/res/layout/redbox_item_title.xml"
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
@@ -137,7 +137,7 @@
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/layout/redbox_item_frame.xml",
-        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.50.3/res/layout/redbox_item_frame.xml"
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.51.0/res/layout/redbox_item_frame.xml"
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
@@ -237,7 +237,7 @@
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/layout/redbox_view.xml",
-        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.50.3/res/layout/redbox_view.xml"
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.51.0/res/layout/redbox_view.xml"
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",

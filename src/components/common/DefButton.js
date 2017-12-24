@@ -11,10 +11,14 @@ import {
 
 const DefButton = props =>{
   const content = (
-    <View style={[Styles.buttonStyle, {backgroundColor: props.color}]}>
-      <Text style={styles.textStyle}>{props.children}</Text>
+    <View style={[styles.buttonStyle, {backgroundColor: props.color}, props.disabled ?  styles.disabled: null]}>
+      <Text style={[styles.textStyle, props.disabled ? styles.disabledText: null]}>{props.children}</Text>
     </View>
   );
+  
+  if(props.disabled){
+    return content
+  }
   if(Platform.OS === "android"){
   return(
     <TouchableNativeFeedback onPress={props.onPress}>
@@ -29,7 +33,7 @@ const DefButton = props =>{
     );
 };
 
-const Styles = StyleSheet.create({  
+const styles = StyleSheet.create({  
   buttonStyle:{
     padding:10,
     margin:5,
@@ -39,6 +43,14 @@ const Styles = StyleSheet.create({
   },
   textStyle:{
     fontSize:20
+  },
+  disabled:{
+    backgroundColor: "#eee",
+    //color: "#aaa",
+    borderColor: "#aaa"
+  },
+  disabledText:{
+    color:"red"
   }
 })
 export default DefButton;

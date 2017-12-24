@@ -23,5 +23,6 @@ dependencies: \
   /Users/rayon/Documents/react-native/rn-course/node_modules/react-native/React/Base/RCTFrameUpdate.h \
   /Users/rayon/Documents/react-native/rn-course/node_modules/react-native/React/Base/RCTInvalidating.h \
   /Users/rayon/Documents/react-native/rn-course/node_modules/react-native/React/Views/UIView+React.h \
+  /Users/rayon/Documents/react-native/rn-course/node_modules/react-native/React/Base/RCTParserUtils.h \
   /Users/rayon/Documents/react-native/rn-course/node_modules/react-native/React/Views/RCTShadowView.h \
   /Users/rayon/Documents/react-native/rn-course/node_modules/react-native/React/Base/RCTRootView.h
