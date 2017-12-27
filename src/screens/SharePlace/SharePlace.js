@@ -74,7 +74,7 @@ class SharePlace extends Component{
     }
     });
   }
-  imagePickHandler = image =>{
+  imagePickHandler = (image, base64) =>{
     this.setState(prevState =>{
       return {
         controls:{
