@@ -13,6 +13,7 @@ const ListContainer = props =>{
       <ListItem
          placeName={info.item.name} 
          placeImage={info.item.image}
+         placeLocation={info.item.location}
          onItemPress={()=> props.onItemSelected(info.item.key)}
       />
     )}

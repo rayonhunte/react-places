@@ -80,6 +80,10 @@
         "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/layout/abc_alert_dialog_title_material.xml"
     },
     {
+        "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/layout/list_item.xml",
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-image-picker/unspecified/res/layout/list_item.xml"
+    },
+    {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
         "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/res/layout/design_navigation_menu_item.xml"
     },

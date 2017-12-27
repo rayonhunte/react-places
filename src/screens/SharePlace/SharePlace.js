@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-import {Text, View, TextInput, Button, StyleSheet, ScrollView, Image} from 'react-native';
+import {Text, View, TextInput, Button, StyleSheet, ScrollView, Image, KeyboardAvoidingView} from 'react-native';
 import {connect} from 'react-redux';
 import {addPlace} from '../../store/actions';
 import Input from '../../components/common/Input';
 import MainText from '../../components/common/MainText';
 import FormHeader from '../../components/common/FormHeader';
 import imagePlaceHolder from '../../assets/kitty.jpeg';
-import ImagePicker from '../../components/ImagePicker/ImagePicker';
 import LocateMe from '../../components/LocateMe/LocateMe';
 import PlaceInput from '../../components/PlaceInput/PlaceInput';
+import validate from '../../utility/validation';
+import PickerImage from '../../components/PickerImage/PickerImage';
 
 
 class SharePlace extends Component{
@@ -22,11 +23,68 @@ class SharePlace extends Component{
     this.props.navigator.setOnNavigatorEvent(this.OnNavigatorEvent);
   }
   state={
-    placeName:""
+    controls: {
+      placeName:{
+        value:"",
+        valid:false,
+        validationRules:{
+          noPlace:false
+        },
+        touched: false
+      },
+      location:{
+        value: null,
+        valid: false
+      },
+      image:{
+        value: null,
+        valid: false
+      }
+    }
   }
   placeNameChangedHandler = placeName =>{
-    this.setState({
-      placeName
+    this.setState(prevState =>{
+      return {
+        controls: {
+          ...prevState.controls,
+          placeName:{
+            ...prevState.controls.placeName,
+            value: placeName,
+            valid:
+              validate(
+                placeName,
+                prevState.controls.placeName.validationRules
+              ),
+            touched: true
+          }
+        }
+      }
+    })
+  }
+  locationPickHandler = location =>{
+    this.setState(prevState =>{
+      return {
+      controls:{
+        ...prevState.controls,
+        location:{
+          value: location,
+          valid: true
+        }
+      }
+    }
+    });
+  }
+  imagePickHandler = image =>{
+    this.setState(prevState =>{
+      return {
+        controls:{
+          ...prevState.controls,
+          image:{
+            value: image,
+            valid: true
+          }
+        }
+      }
     })
   }
   OnNavigatorEvent = event =>{
@@ -39,24 +97,38 @@ class SharePlace extends Component{
     }
   }
   placeAddedHandler = () =>{
-    if(this.state.placeName.trim() !== "" ){
-      this.props.onAddPlace(this.state.placeName);
-    }
+    this.props.onAddPlace(
+      this.state.controls.placeName.value,
+      this.state.controls.location.value,
+      this.state.controls.image.value
+    );
   }
+  
   render(){
     return (
       <ScrollView>
-          <View>
-            <ImagePicker/>
-            <LocateMe/>
+          <KeyboardAvoidingView behavior="padding">
+            <PickerImage onImagePick={this.imagePickHandler}/>
+            <LocateMe onLocationPick={this.locationPickHandler}/>
             <PlaceInput 
-              value={this.state.placeName}
-              onChangeText={this.placeNameChangedHandler}
+              value={this.state.controls.placeName.value}
+              touched={this.state.controls.placeName.touched}
+              valid={this.state.controls.placeName.valid}
+              onChangeText={val => this.placeNameChangedHandler(val)}
               />
-            <View style={styles.buttonStyle}>
-              <Button title="Share Place!" onPress={this.placeAddedHandler}/>
+            <View style={styles.container}>
+              <Button 
+                title="Share Place"
+                onPress={this.placeAddedHandler}
+                disabled={
+                  !this.state.controls.placeName.valid || 
+                  !this.state.controls.location.valid ||
+                  !this.state.controls.image.valid 
+                  }
+                color="#29aaf4"
+                />
             </View>
-          </View>
+            </KeyboardAvoidingView>
       </ScrollView>
     );
   } 
@@ -64,7 +136,7 @@ class SharePlace extends Component{
 
 const mapDispatchToProps = dispatch =>{
   return{
-    onAddPlace: (placeName)=> dispatch(addPlace(placeName))
+    onAddPlace: (placeName, location, image)=> dispatch(addPlace(placeName, location, image))
   };
 }
 

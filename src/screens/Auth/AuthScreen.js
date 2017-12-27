@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, StyleSheet, Button, TextInput, ImageBackground, Dimensions} from 'react-native';
+import {View, Text, StyleSheet, Button, TextInput, ImageBackground, Dimensions, KeyboardAvoidingView, Keyboard, TouchableWithoutFeedback} from 'react-native';
 import startTabs from '../MainTabs/startMainTabs';
 import Input from '../../components/common/Input';
 import FormHeader from '../../components/common/FormHeader';
@@ -13,6 +13,7 @@ import {tryAuth} from '../../store/actions';
 class AuthScreen extends Component {
     state = {
        viewMode: Dimensions.get('window').height > 500 ? "portrait" : "landscape",
+       authMode: "login",
        controls: {
            email:{
                value:"",
@@ -53,9 +54,22 @@ class AuthScreen extends Component {
             viewMode: dims.window.height > 500 ? "portrait" : "landscape"
          });
     }
-
-
+    
+    switchAuthModeHandler = () =>{
+        this.setState(prevState => {
+            return {
+             authMode: prevState.authMode === 'login' ? 'signup': "login"
+            }
+        });
+    }
+    
     loginHandler = ()=>{
+        const {email, password} = this.state.controls
+        const authData = {
+            email: email.value,
+            password: password.value
+        }
+        this.props.onAuth(authData);
         startTabs();
    }
    updateInputState = (key, value) => {
@@ -106,6 +120,7 @@ class AuthScreen extends Component {
 
    render () {
         let headingText = null;
+        let confirmPasswordControl = null;
         const {email, password,confirmPassword} = this.state.controls 
         if (this.state.viewMode === "portrait"){
             headingText = (
@@ -114,56 +129,72 @@ class AuthScreen extends Component {
                 </MainText>
             );
         }
+        if (this.state.authMode === 'signup'){
+            confirmPasswordControl = (
+                <View style={
+                    this.state.viewMode === 'portrait' ? styles.portrait : styles.landscape
+                }>
+                <Input 
+                    placeholder="Confirm Password" 
+                    style={styles.input} 
+                    value={confirmPassword.value}
+                    onChangeText={val => this.updateInputState('confirmPassword', val)}
+                    valid={email.valid}
+                    touched={email.touched}
+                    autoCapitalize="none"
+                    secureTextEntry={true}
+                    />
+                </View>
+            );
+        }
         return (
             <ImageBackground source={backgroundImage} style={styles.backImage}>
-                <View style={styles.container}>
-                    {headingText}
-                    <DefButton color="#29aaf4">Switch To Login</DefButton>
-                    <View style={styles.inputContainer}>
-                        <Input 
-                            placeholder="Your Email Address" 
-                            style={styles.input} 
-                            value={email.value}
-                            onChangeText={val => this.updateInputState('email', val)}
-                            valid={email.valid}
-                            touched={email.touched}
-                            />
-                        
-                        <View style={this.state.viewMode === 'portrait' ? styles.portraitContainer : styles.landscapeContainer}>
-                            <View style={
-                                this.state.viewMode === 'portrait' ? styles.portrait : styles.landscape
-                            }>
-                            <Input 
-                                placeholder="Password"  
-                                style={styles.input} 
-                                value={password.value}
-                                onChangeText={val => this.updateInputState('password', val)}
-                                valid={email.valid}
-                                touched={email.touched}
-                                />
+                <KeyboardAvoidingView behavior="padding" style={styles.container}>
+                        {headingText}
+                        <DefButton color="#29aaf4" onPress={this.switchAuthModeHandler}>
+                            {this.state.authMode === 'login' ? 'Switch To SingUp': 'Switch To Login'}
+                        </DefButton>
+                        <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+                            <View style={styles.inputContainer}>
+                                <Input 
+                                    placeholder="Your Email Address" 
+                                    style={styles.input} 
+                                    value={email.value}
+                                    onChangeText={val => this.updateInputState('email', val)}
+                                    valid={email.valid}
+                                    touched={email.touched}
+                                    keyboardType="email-address"
+                                    autoCapitalize="none"
+                                    autoCorrect={false}
+                                    />
+                                
+                                <View style={this.state.viewMode === 'portrait' || this.state.authMode === 'login' ? styles.portraitContainer : styles.landscapeContainer}>
+                                    <View style={
+                                        this.state.viewMode === 'portrait' || this.state.authMode ==='login' ? styles.portrait : styles.landscape
+                                    }>
+                                    <Input 
+                                        placeholder="Password"  
+                                        style={styles.input} 
+                                        value={password.value}
+                                        onChangeText={val => this.updateInputState('password', val)}
+                                        valid={email.valid}
+                                        touched={email.touched}
+                                        autoCapitalize="none"
+                                        secureTextEntry={true}
+                                        />
+                                    </View>
+                                    { confirmPasswordControl }
+                                </View>
                             </View>
-                            <View style={
-                                this.state.viewMode === 'portrait' ? styles.portrait : styles.landscape
-                            }>
-                            <Input 
-                                placeholder="Confirm Password" 
-                                style={styles.input} 
-                                value={confirmPassword.value}
-                                onChangeText={val => this.updateInputState('confirmPassword', val)}
-                                valid={email.valid}
-                                touched={email.touched}
-                                />
-                            </View>
-                        </View>
-                    </View>
-                    <DefButton 
-                        onPress={this.loginHandler} 
-                        color="#29aaf4"
-                        disabled={!email.valid || !password.valid || !confirmPassword.valid}
-                        > 
-                        Submit
-                    </DefButton>
-                </View>
+                        </TouchableWithoutFeedback>
+                        <DefButton 
+                            onPress={this.loginHandler} 
+                            color="#29aaf4"
+                            disabled={!email.valid || !password.valid || !confirmPassword.valid && this.state.authMode==='signup'}
+                            > 
+                            Submit
+                        </DefButton>
+                </KeyboardAvoidingView>
             </ImageBackground>
         );
     }

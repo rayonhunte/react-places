@@ -3,6 +3,7 @@ import {Text, View, TouchableOpacity, StyleSheet, Animated} from 'react-native';
 import { connect } from 'react-redux';
 import ListContainer from '../../components/ListContainer/ListContainer';
 
+
 class FindPlace extends Component{
   
   state = {
