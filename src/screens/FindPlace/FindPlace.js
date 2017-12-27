@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Text, View, TouchableOpacity, StyleSheet, Animated} from 'react-native';
 import { connect } from 'react-redux';
 import ListContainer from '../../components/ListContainer/ListContainer';
+import {getPlaces} from '../../store/actions/index';
 
 
 class FindPlace extends Component{
@@ -64,7 +65,9 @@ class FindPlace extends Component{
         this.placesLoadedHandler();
       });
   }
-
+  componentDidMount(){
+    this.props.onGetPlaces()
+  }
 
   render(){
     let content = (
@@ -108,7 +111,7 @@ class FindPlace extends Component{
 
 const mapDispatchToProps = dispatch =>{
   return {
-
+    onGetPlaces: () => dispatch(getPlaces())
   }
 }
 

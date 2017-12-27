@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Text, View, TextInput, Button, StyleSheet, ScrollView, Image, KeyboardAvoidingView} from 'react-native';
+import {Text, View, TextInput, Button, StyleSheet, ScrollView, Image, KeyboardAvoidingView, ActivityIndicator} from 'react-native';
 import {connect} from 'react-redux';
 import {addPlace} from '../../store/actions';
 import Input from '../../components/common/Input';
@@ -105,6 +105,23 @@ class SharePlace extends Component{
   }
   
   render(){
+    let submitButton = (
+      <Button 
+        title="Share Place"
+        onPress={this.placeAddedHandler}
+        disabled={
+          !this.state.controls.placeName.valid || 
+          !this.state.controls.location.valid ||
+          !this.state.controls.image.valid 
+          }
+        color="#29aaf4"
+      />
+    );
+    if (this.props.isLoading){
+      submitButton = (
+        <ActivityIndicator />
+      );
+    } 
     return (
       <ScrollView>
           <KeyboardAvoidingView behavior="padding">
@@ -117,21 +134,18 @@ class SharePlace extends Component{
               onChangeText={val => this.placeNameChangedHandler(val)}
               />
             <View style={styles.container}>
-              <Button 
-                title="Share Place"
-                onPress={this.placeAddedHandler}
-                disabled={
-                  !this.state.controls.placeName.valid || 
-                  !this.state.controls.location.valid ||
-                  !this.state.controls.image.valid 
-                  }
-                color="#29aaf4"
-                />
+              {submitButton}
             </View>
             </KeyboardAvoidingView>
       </ScrollView>
     );
   } 
+}
+
+const mapStateToProps = state => {
+  return {
+    isLoading: state.ui.isLoading
+  }
 }
 
 const mapDispatchToProps = dispatch =>{
@@ -162,4 +176,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default connect(null,mapDispatchToProps)(SharePlace);
+export default connect(mapStateToProps,mapDispatchToProps)(SharePlace);
