@@ -2,7 +2,7 @@
 manifest
 ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml:1:1-39:12
 	package
-		ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml:2:5-27
+		ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml:2:5-32
 		INJECTED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -123,7 +123,7 @@ ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/An
 		ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml:25:9-64
 	android:name
 		ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml:24:9-54
-activity#com.rncourse.MainActivity
+activity#com.rashreact.app.MainActivity
 ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml:26:7-35:18
 	android:label
 		ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml:28:9-41

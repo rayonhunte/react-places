@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.rncourse"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    package="com.rashreact.app"
+    android:versionCode="3"
+    android:versionName="0.3" >
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -29,7 +29,7 @@
     <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:name="com.rncourse.MainApplication"
+        android:name="com.rashreact.app.MainApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -39,7 +39,7 @@
             android:value="AIzaSyBfZEOz1nOgXr3wbNCBfo44nAhMKWlSL_A" />
 
         <activity
-            android:name="com.rncourse.MainActivity"
+            android:name="com.rashreact.app.MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="@string/app_name"
             android:windowSoftInputMode="adjustResize" >
@@ -66,7 +66,7 @@
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.rncourse.provider"
+            android:authorities="com.rashreact.app.provider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
