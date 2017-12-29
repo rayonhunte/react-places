@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/release/menu/search_item.xml",
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-navigation/unspecified/res/menu/search_item.xml"
+    },
+    {
+        "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/release/menu/stub.xml",
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-navigation/unspecified/res/menu/stub.xml"
+    }
+]

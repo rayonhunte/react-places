@@ -133,6 +133,7 @@
     <orderEntry type="module" module-name="react-native-navigation" exported="" />
     <orderEntry type="module" module-name="react-native-maps" exported="" />
     <orderEntry type="module" module-name="react-native-vector-icons" exported="" />
+    <orderEntry type="module" module-name="react-native-image-picker" exported="" />
     <orderEntry type="library" exported="" name="android-android-23" level="project" />
   </component>
 </module>
