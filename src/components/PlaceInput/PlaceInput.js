@@ -3,14 +3,17 @@ import {View,StyleSheet, Button} from 'react-native';
 import Input from '../../components/common/Input';
 
 
-const PlaceInput = props => {
-     return (
+const PlaceInput = props =>(
           <Input 
             placeholder="Place Name"
-            value={props.placeName}
+            value={props.placeData.value}
+            valid={props.placeData.valid}
+            touched={props.placeData.touched}
             onChangeText={props.onChangeText}
           />
-     );
-}
+);
+
 
 export default PlaceInput;
+
+

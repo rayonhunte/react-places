@@ -5,14 +5,19 @@ import MapView from 'react-native-maps';
 
 
 class LocateMe extends Component {
-  state = {
-    focusedLocation:{
-      latitude: 6.787627,
-      longitude: -58.186553,
-      latitudeDelta: 0.0122,
-      longitudeDelta: Dimensions.get("window").width / Dimensions.get("window").height * 0.0122
-    },
-    locationChosen:false
+  componentWillMount(){
+    this.reset()
+  }
+  reset = () =>{
+    this.setState({
+      focusedLocation:{
+        latitude: 6.787627,
+        longitude: -58.186553,
+        latitudeDelta: 0.0122,
+        longitudeDelta: Dimensions.get("window").width / Dimensions.get("window").height * 0.0122
+      },
+      locationChosen:false
+    })
   }
   mapPressHandler = event => {
     const coords = event.nativeEvent.coordinate

@@ -2,7 +2,7 @@ import React from 'react';
 import {View,Text, StyleSheet, Button,Image, TouchableOpacity, Dimensions, Platform} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome'
 import {connect} from 'react-redux';
-import { deletePlace } from '../../store/actions/places';
+import { onPlaceDelete } from '../../store/actions/places';
 import MapView from 'react-native-maps'
 
 
@@ -87,7 +87,7 @@ class PlaceDetail extends React.Component {
 
 const mapDispatchToProps = dispatch =>{
   return {
-      onDeletePlace: key => dispatch(deletePlace(key))
+      onDeletePlace: key => dispatch(onPlaceDelete(key))
   }
 }
 

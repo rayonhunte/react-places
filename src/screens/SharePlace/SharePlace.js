@@ -10,6 +10,7 @@ import LocateMe from '../../components/LocateMe/LocateMe';
 import PlaceInput from '../../components/PlaceInput/PlaceInput';
 import validate from '../../utility/validation';
 import PickerImage from '../../components/PickerImage/PickerImage';
+import {startAddPlace} from '../../store/actions/index';
 
 
 class SharePlace extends Component{
@@ -22,37 +23,64 @@ class SharePlace extends Component{
     super(props)
     this.props.navigator.setOnNavigatorEvent(this.OnNavigatorEvent);
   }
-  state={
-    controls: {
-      placeName:{
-        value:"",
-        valid:false,
-        validationRules:{
-          noPlace:false
-        },
-        touched: false
-      },
-      location:{
-        value: null,
-        valid: false
-      },
-      image:{
-        value: null,
-        valid: false
+  componentWillMount(){
+    this.reset()
+  }
+  componentDidUpdate(){
+    if(this.props.placeAdded){
+      this.props.navigator.switchToTab({tabIndex:0})
+    }
+  }
+  
+  OnNavigatorEvent = event =>{
+    console.log(event.type)
+    if(event.type === "ScreenChangedEvent"){
+      if(event.id === "willAppear"){
+        this.props.onStartAddPlace();
+      }
+    }
+    if(event.type === "NavBarButtonPress"){
+      if(event.id === "sideDrawerToggle"){
+        this.props.navigator.toggleDrawer({
+          side: "left"
+        })
       }
     }
   }
-  placeNameChangedHandler = placeName =>{
+  
+  reset = () => {
+    this.setState({
+      controls: {
+        placeName:{
+          value:"",
+          valid:false,
+          validationRules:{
+            noPlace:false
+          },
+          touched: false
+        },
+        location:{
+          value: null,
+          valid: false
+        },
+        image:{
+          value: null,
+          valid: false
+        }
+      }
+    })
+  }
+  placeNameChangedHandler = val =>{
     this.setState(prevState =>{
       return {
         controls: {
           ...prevState.controls,
           placeName:{
             ...prevState.controls.placeName,
-            value: placeName,
+            value: val,
             valid:
               validate(
-                placeName,
+                val,
                 prevState.controls.placeName.validationRules
               ),
             touched: true
@@ -87,21 +115,16 @@ class SharePlace extends Component{
       }
     })
   }
-  OnNavigatorEvent = event =>{
-    if(event.type === "NavBarButtonPress"){
-      if(event.id === "sideDrawerToggle"){
-        this.props.navigator.toggleDrawer({
-          side: "left"
-        })
-      }
-    }
-  }
+  
   placeAddedHandler = () =>{
     this.props.onAddPlace(
       this.state.controls.placeName.value,
       this.state.controls.location.value,
       this.state.controls.image.value
     );
+    this.reset();
+    this.imagePicker.reset()
+    this.locateMe.reset()
   }
   
   render(){
@@ -125,13 +148,15 @@ class SharePlace extends Component{
     return (
       <ScrollView>
           <KeyboardAvoidingView behavior="padding">
-            <PickerImage onImagePick={this.imagePickHandler}/>
-            <LocateMe onLocationPick={this.locationPickHandler}/>
+            <PickerImage onImagePick={this.imagePickHandler}
+            ref={ref => this.imagePicker = ref}
+            />
+            <LocateMe onLocationPick={this.locationPickHandler}
+              ref={ ref=>this.locateMe = ref}
+            />
             <PlaceInput 
-              value={this.state.controls.placeName.value}
-              touched={this.state.controls.placeName.touched}
-              valid={this.state.controls.placeName.valid}
-              onChangeText={val => this.placeNameChangedHandler(val)}
+              placeData = {this.state.controls.placeName}
+              onChangeText={this.placeNameChangedHandler}
               />
             <View style={styles.container}>
               {submitButton}
@@ -144,13 +169,15 @@ class SharePlace extends Component{
 
 const mapStateToProps = state => {
   return {
-    isLoading: state.ui.isLoading
+    isLoading: state.ui.isLoading,
+    placeAdded: state.places.placeAdded
   }
 }
 
 const mapDispatchToProps = dispatch =>{
   return{
-    onAddPlace: (placeName, location, image)=> dispatch(addPlace(placeName, location, image))
+    onAddPlace: (placeName, location, image)=> dispatch(addPlace(placeName, location, image)),
+    onStartAddPlace: () => dispatch(startAddPlace())
   };
 }
 

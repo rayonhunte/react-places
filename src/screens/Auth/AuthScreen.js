@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, StyleSheet, Button, TextInput, ImageBackground, Dimensions, KeyboardAvoidingView, Keyboard, TouchableWithoutFeedback} from 'react-native';
-import startTabs from '../MainTabs/startMainTabs';
+import {View, Text, StyleSheet, Button, TextInput, ImageBackground, Dimensions, KeyboardAvoidingView, Keyboard, TouchableWithoutFeedback, ActivityIndicator } from 'react-native';
 import Input from '../../components/common/Input';
 import FormHeader from '../../components/common/FormHeader';
 import MainText from '../../components/common/MainText';
@@ -8,7 +7,7 @@ import backgroundImage from '../../assets/background.jpg';
 import DefButton from '../../components/common/DefButton';
 import validate from '../../utility/validation';
 import {connect} from 'react-redux';
-import {tryAuth} from '../../store/actions';
+import {tryAuth, authAutoSignIn} from '../../store/actions';
 
 class AuthScreen extends Component {
     state = {
@@ -48,7 +47,10 @@ class AuthScreen extends Component {
     componentWillUnmount(){
         Dimensions.removeEventListener("change",this.updateStyles)
     }
-
+    componentDidMount(){
+        //console.log("auto sign")
+        //this.props.onAutoSignIn()
+    }
     updateStyles = (dims) =>{
         this.setState({
             viewMode: dims.window.height > 500 ? "portrait" : "landscape"
@@ -63,14 +65,13 @@ class AuthScreen extends Component {
         });
     }
     
-    loginHandler = ()=>{
+    authHandler = ()=>{
         const {email, password} = this.state.controls
         const authData = {
             email: email.value,
             password: password.value
         }
-        this.props.onAuth(authData);
-        startTabs();
+        this.props.onTryAuth(authData, this.state.authMode);
    }
    updateInputState = (key, value) => {
     let connectedValue = {};
@@ -122,6 +123,22 @@ class AuthScreen extends Component {
         let headingText = null;
         let confirmPasswordControl = null;
         const {email, password,confirmPassword} = this.state.controls 
+
+        let submitAuth = (
+            <DefButton 
+                onPress={this.authHandler} 
+                color="#29aaf4"
+                disabled={!email.valid || !password.valid || !confirmPassword.valid && this.state.authMode==='signup'}
+                > 
+                Submit
+            </DefButton>
+        )
+        if (this.props.isLoading){
+            submitAuth = (
+                <ActivityIndicator />
+            )
+        }
+
         if (this.state.viewMode === "portrait"){
             headingText = (
                <MainText>
@@ -187,13 +204,7 @@ class AuthScreen extends Component {
                                 </View>
                             </View>
                         </TouchableWithoutFeedback>
-                        <DefButton 
-                            onPress={this.loginHandler} 
-                            color="#29aaf4"
-                            disabled={!email.valid || !password.valid || !confirmPassword.valid && this.state.authMode==='signup'}
-                            > 
-                            Submit
-                        </DefButton>
+                       {submitAuth}
                 </KeyboardAvoidingView>
             </ImageBackground>
         );
@@ -236,13 +247,15 @@ const styles = StyleSheet.create({
 
 const mapDispatchToProps = dispatch =>{
     return {
-        onAuth: authData => dispatch(tryAuth(authData))
+        onTryAuth: (authData, authMode) => dispatch(tryAuth(authData, authMode)),
+        onAutoSignIn: () => dispatch(authAutoSignIn())
     }
   }
   
   const mapStateToProps = state =>{
     return {
-      places: state.places.places
+      isLoading: state.ui.isLoading
+
     }
   }
 
