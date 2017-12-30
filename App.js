@@ -6,6 +6,7 @@ import FindPlace from "./src/screens/FindPlace/FindPlace";
 import SharePlace from "./src/screens/SharePlace/SharePlace";
 import PlaceDetails from "./src/screens/PlaceDetail/PlaceDetail";
 import SideDrawer from "./src/screens/SideDrawer/SideDrawer";
+import Settings from "./src/screens/Settings/Settings";
 
 const store = configureStore();
 
@@ -27,8 +28,8 @@ Navigation.registerComponent("awesome-places.PlaceDetails",
 () => PlaceDetails,
       store, 
       Provider);
-Navigation.registerComponent("awesome-places.SideDrawer", 
-() => SideDrawer,
+Navigation.registerComponent("awesome-places.Settings", 
+() => Settings,
       store,
       Provider);
 // Start a App

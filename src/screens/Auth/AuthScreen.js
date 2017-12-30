@@ -48,8 +48,8 @@ class AuthScreen extends Component {
         Dimensions.removeEventListener("change",this.updateStyles)
     }
     componentDidMount(){
-        //console.log("auto sign")
-        //this.props.onAutoSignIn()
+        console.log("auto sign")
+        this.props.onAutoSignIn()
     }
     updateStyles = (dims) =>{
         this.setState({

@@ -5,7 +5,7 @@ const startTabs = () =>{
   Promise.all([
     Icon.getImageSource("map", 30),
     Icon.getImageSource("share", 30),
-    Icon.getImageSource("bars", 30)
+    Icon.getImageSource("cogs", 30)
   ]).then(sources =>{
     Navigation.startTabBasedApp({
       tabs: [
@@ -14,39 +14,22 @@ const startTabs = () =>{
           label: "Find Place",
           title: "Find Place",
           icon: sources[0],
-          navigatorButtons: {
-            leftButtons: [
-              {
-                icon: sources[2],
-                title: "Menu",
-                id: "sideDrawerToggle"
-              }
-            ]
-          }
         },
         {
           screen: "awesome-places.SharePlace",
           label: "Share Place",
           title: "Share Place",
           icon: sources[1],
-          navigatorButtons: {
-            leftButtons: [
-              {
-                icon: sources[2],
-                title: "Menu",
-                id: "sideDrawerToggle"
-              }
-            ]
-          }
+        },
+        {
+          screen: "awesome-places.Settings",
+          label: "Settings",
+          title: "Settings",
+          icon: sources[2],
         }
       ],
       tabsStyle:{
         tabBarSelectedButtonColor: "orange"
-      },
-      drawer:{
-        left:{
-          screen: 'awesome-places.SideDrawer',
-        }
       },
       appStyle:{
         tabBarSelectedButtonColor: "orange"

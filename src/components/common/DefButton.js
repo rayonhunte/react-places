@@ -12,7 +12,7 @@ import {
 const DefButton = props =>{
   const content = (
     <View style={[styles.buttonStyle, {backgroundColor: props.color}, props.disabled ?  styles.disabled: null]}>
-      <Text style={[styles.textStyle, props.disabled ? styles.disabledText: null]}>{props.children}</Text>
+      <Text style={[styles.textStyle, props.disabled ? styles.disabledText: null, {color: props.textColor}]}>{props.children}</Text>
     </View>
   );
   
@@ -46,7 +46,6 @@ const styles = StyleSheet.create({
   },
   disabled:{
     backgroundColor: "#eee",
-    //color: "#aaa",
     borderColor: "#aaa"
   },
   disabledText:{
