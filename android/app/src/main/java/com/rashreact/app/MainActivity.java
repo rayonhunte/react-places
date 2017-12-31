@@ -17,7 +17,7 @@ public class MainActivity extends  SplashActivity {
         view.setGravity(Gravity.CENTER);
 
         textView.setTextColor(Color.parseColor("#fa923f"));
-        textView.setText("Awesome Places");
+        textView.setText("RASH");
         textView.setGravity(Gravity.CENTER);
         textView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 40);
 
