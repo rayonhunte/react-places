@@ -20,7 +20,7 @@ class Settings extends Component {
   render(){
     return (
       <View style={styles.container}>
-           <DefButton textColor="white" color="red">Logout</DefButton>        
+           <DefButton textColor="white" color="red" onPress={this.logoutHandler}>Logout</DefButton>        
       </View>
     )
   }
