@@ -161,7 +161,7 @@
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/release/layout/list_item.xml",
-        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-image-picker/unspecified/res/layout/list_item.xml"
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-image-picker/unspecified/res/layout/list_item.xml"
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/release/layout/redbox_item_title.xml",

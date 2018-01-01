@@ -33,7 +33,7 @@
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/release/anim/slide_down.xml",
-        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-navigation/unspecified/res/anim/slide_down.xml"
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-navigation/unspecified/res/anim/slide_down.xml"
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/release/anim/abc_popup_enter.xml",
@@ -53,7 +53,7 @@
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/release/anim/no_animation.xml",
-        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-navigation/unspecified/res/anim/no_animation.xml"
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-navigation/unspecified/res/anim/no_animation.xml"
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/release/anim/abc_slide_in_bottom.xml",
@@ -81,7 +81,7 @@
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/release/anim/slide_out_right.xml",
-        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-navigation/unspecified/res/anim/slide_out_right.xml"
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-navigation/unspecified/res/anim/slide_out_right.xml"
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/release/anim/abc_slide_out_bottom.xml",
@@ -97,15 +97,15 @@
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/release/anim/slide_up.xml",
-        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-navigation/unspecified/res/anim/slide_up.xml"
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-navigation/unspecified/res/anim/slide_up.xml"
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/release/anim/lightbox_enter.xml",
-        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-navigation/unspecified/res/anim/lightbox_enter.xml"
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-navigation/unspecified/res/anim/lightbox_enter.xml"
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/release/anim/slide_in_right.xml",
-        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-navigation/unspecified/res/anim/slide_in_right.xml"
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-navigation/unspecified/res/anim/slide_in_right.xml"
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/release/anim/catalyst_slide_up.xml",
@@ -113,6 +113,6 @@
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/release/anim/pop.xml",
-        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-navigation/unspecified/res/anim/pop.xml"
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-navigation/unspecified/res/anim/pop.xml"
     }
 ]

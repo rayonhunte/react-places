@@ -24,6 +24,10 @@
         "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/color/abc_tint_edittext.xml"
     },
     {
+        "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_tint.xml",
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.4/res/color/common_google_signin_btn_tint.xml"
+    },
+    {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
         "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/color/abc_hint_foreground_material_dark.xml"
     },

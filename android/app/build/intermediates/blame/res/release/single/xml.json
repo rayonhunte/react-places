@@ -1,7 +1,7 @@
 [
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/release/xml/provider_paths.xml",
-        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-image-picker/unspecified/res/xml/provider_paths.xml"
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-image-picker/unspecified/res/xml/provider_paths.xml"
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/release/xml/preferences.xml",

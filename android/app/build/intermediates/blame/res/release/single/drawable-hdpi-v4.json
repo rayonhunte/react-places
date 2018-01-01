@@ -25,7 +25,7 @@
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_action_name.png",
-        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-navigation/unspecified/res/drawable-hdpi-v4/ic_action_name.png"
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-navigation/unspecified/res/drawable-hdpi-v4/ic_action_name.png"
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_list_pressed_holo_light.9.png",
@@ -57,7 +57,7 @@
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/release/drawable-hdpi-v4/search.png",
-        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-navigation/unspecified/res/drawable-hdpi-v4/search.png"
+        "source": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-navigation/unspecified/res/drawable-hdpi-v4/search.png"
     },
     {
         "merged": "/Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",

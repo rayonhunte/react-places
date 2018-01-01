@@ -1,7 +1,4 @@
 {
-  "expo": {
-    "sdkVersion": "23.0.0"
-  },
-  "name": "awesome places",
-  "displayName": "RASH Places"
+  "name": "RASHPlaces",
+  "displayName": "RASHPlaces"
 }

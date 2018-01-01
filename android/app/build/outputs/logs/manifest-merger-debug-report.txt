@@ -2,7 +2,7 @@
 manifest
 ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml:1:1-39:12
 	package
-		ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml:2:5-32
+		ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml:2:5-29
 		INJECTED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -17,7 +17,7 @@ ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/An
 		ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
 ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml:6:5-67
-MERGED from [rncourse:react-native-maps:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-maps/unspecified/AndroidManifest.xml:9:5-67
+MERGED from [RASHPlaces:react-native-maps:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-maps/unspecified/AndroidManifest.xml:9:5-67
 MERGED from [com.google.android.gms:play-services-maps:10.0.1] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.0.1/AndroidManifest.xml:20:5-66
 	android:name
 		ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml:6:22-64
@@ -40,20 +40,20 @@ ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/An
 		ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml:10:22-78
 uses-sdk
 ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml:13:5-15:41
-MERGED from [rncourse:react-native-vector-icons:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-vector-icons/unspecified/AndroidManifest.xml:7:5-9:41
-MERGED from [rncourse:react-native-navigation:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-navigation/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [RASHPlaces:react-native-navigation:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-navigation/unspecified/AndroidManifest.xml:7:5-9:41
 MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.aurelhubert/ahbottomnavigation/2.0.6/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:design:25.3.1] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.1/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:transition:25.3.1] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.android.support/transition/25.3.1/AndroidManifest.xml:20:5-44
 MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.balysv.materialmenu/material-menu-toolbar/1.5.4/AndroidManifest.xml:8:5-10:41
 MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.balysv.materialmenu/material-menu/1.5.4/AndroidManifest.xml:8:5-10:41
-MERGED from [rncourse:react-native-maps:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-maps/unspecified/AndroidManifest.xml:5:5-7:41
+MERGED from [RASHPlaces:react-native-vector-icons:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-vector-icons/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [RASHPlaces:react-native-maps:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-maps/unspecified/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.gms:play-services-maps:10.0.1] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.0.1/AndroidManifest.xml:23:5-42
 MERGED from [com.google.android.gms:play-services-base:10.0.1] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/AndroidManifest.xml:17:5-42
 MERGED from [com.google.android.gms:play-services-tasks:10.0.1] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.0.1/AndroidManifest.xml:3:5-42
 MERGED from [com.google.android.gms:play-services-basement:10.0.1] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/AndroidManifest.xml:17:5-42
-MERGED from [rncourse:react-native-image-picker:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-image-picker/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [RASHPlaces:react-native-image-picker:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-image-picker/unspecified/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.51.0] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.51.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:support-v4:25.3.1] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/AndroidManifest.xml:21:5-23:54
@@ -84,7 +84,7 @@ MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/rayon/Documents/react-
 		INJECTED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml
 application
 ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml:17:5-37:19
-MERGED from [rncourse:react-native-navigation:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-navigation/unspecified/AndroidManifest.xml:11:5-18:19
+MERGED from [RASHPlaces:react-native-navigation:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-navigation/unspecified/AndroidManifest.xml:11:5-18:19
 MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.aurelhubert/ahbottomnavigation/2.0.6/AndroidManifest.xml:11:5-20
 MERGED from [com.android.support:design:25.3.1] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:transition:25.3.1] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.android.support/transition/25.3.1/AndroidManifest.xml:26:5-20
@@ -94,7 +94,7 @@ MERGED from [com.google.android.gms:play-services-maps:10.0.1] /Users/rayon/Docu
 MERGED from [com.google.android.gms:play-services-base:10.0.1] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/AndroidManifest.xml:18:5-20:19
 MERGED from [com.google.android.gms:play-services-tasks:10.0.1] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.0.1/AndroidManifest.xml:4:5-19
 MERGED from [com.google.android.gms:play-services-basement:10.0.1] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/AndroidManifest.xml:19:5-21:19
-MERGED from [rncourse:react-native-image-picker:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-image-picker/unspecified/AndroidManifest.xml:11:5-21:19
+MERGED from [RASHPlaces:react-native-image-picker:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-image-picker/unspecified/AndroidManifest.xml:11:5-21:19
 MERGED from [com.facebook.react:react-native:0.51.0] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.51.0/AndroidManifest.xml:13:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-v4:25.3.1] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/AndroidManifest.xml:29:5-20
@@ -123,7 +123,7 @@ ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/An
 		ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml:25:9-64
 	android:name
 		ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml:24:9-54
-activity#com.rashreact.app.MainActivity
+activity#com.rashplaces.MainActivity
 ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml:26:7-35:18
 	android:label
 		ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml:28:9-41
@@ -145,17 +145,17 @@ ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/An
 		ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml:33:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
 ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml:36:7-84
-MERGED from [rncourse:react-native-navigation:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-navigation/unspecified/AndroidManifest.xml:15:9-17:40
+MERGED from [RASHPlaces:react-native-navigation:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-navigation/unspecified/AndroidManifest.xml:15:9-17:40
 	android:exported
-		ADDED from [rncourse:react-native-navigation:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-navigation/unspecified/AndroidManifest.xml:17:13-37
+		ADDED from [RASHPlaces:react-native-navigation:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-navigation/unspecified/AndroidManifest.xml:17:13-37
 	android:name
 		ADDED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml:36:17-81
 activity#com.reactnativenavigation.controllers.NavigationActivity
-ADDED from [rncourse:react-native-navigation:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-navigation/unspecified/AndroidManifest.xml:12:9-14:86
+ADDED from [RASHPlaces:react-native-navigation:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-navigation/unspecified/AndroidManifest.xml:12:9-14:86
 	android:configChanges
-		ADDED from [rncourse:react-native-navigation:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-navigation/unspecified/AndroidManifest.xml:14:13-83
+		ADDED from [RASHPlaces:react-native-navigation:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-navigation/unspecified/AndroidManifest.xml:14:13-83
 	android:name
-		ADDED from [rncourse:react-native-navigation:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-navigation/unspecified/AndroidManifest.xml:13:13-84
+		ADDED from [RASHPlaces:react-native-navigation:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-navigation/unspecified/AndroidManifest.xml:13:13-84
 meta-data#android.support.VERSION
 ADDED from [com.android.support:design:25.3.1] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.1/AndroidManifest.xml:22:5-24:34
@@ -174,9 +174,9 @@ MERGED from [com.android.support:support-compat:25.3.1] /Users/rayon/Documents/r
 	android:name
 		ADDED from [com.android.support:design:25.3.1] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/AndroidManifest.xml:26:9-47
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from [rncourse:react-native-maps:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-maps/unspecified/AndroidManifest.xml:10:5-81
+ADDED from [RASHPlaces:react-native-maps:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-maps/unspecified/AndroidManifest.xml:10:5-81
 	android:name
-		ADDED from [rncourse:react-native-maps:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-maps/unspecified/AndroidManifest.xml:10:22-78
+		ADDED from [RASHPlaces:react-native-maps:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-maps/unspecified/AndroidManifest.xml:10:22-78
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.android.gms:play-services-maps:10.0.1] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.0.1/AndroidManifest.xml:19:5-78
 	android:name
@@ -202,21 +202,21 @@ ADDED from [com.google.android.gms:play-services-basement:10.0.1] /Users/rayon/D
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:10.0.1] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/AndroidManifest.xml:20:20-65
 provider#android.support.v4.content.FileProvider
-ADDED from [rncourse:react-native-image-picker:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-image-picker/unspecified/AndroidManifest.xml:12:9-20:20
+ADDED from [RASHPlaces:react-native-image-picker:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-image-picker/unspecified/AndroidManifest.xml:12:9-20:20
 	android:authorities
-		ADDED from [rncourse:react-native-image-picker:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-image-picker/unspecified/AndroidManifest.xml:14:13-60
+		ADDED from [RASHPlaces:react-native-image-picker:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-image-picker/unspecified/AndroidManifest.xml:14:13-60
 	android:grantUriPermissions
-		ADDED from [rncourse:react-native-image-picker:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-image-picker/unspecified/AndroidManifest.xml:16:13-47
+		ADDED from [RASHPlaces:react-native-image-picker:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-image-picker/unspecified/AndroidManifest.xml:16:13-47
 	android:exported
-		ADDED from [rncourse:react-native-image-picker:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-image-picker/unspecified/AndroidManifest.xml:15:13-37
+		ADDED from [RASHPlaces:react-native-image-picker:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-image-picker/unspecified/AndroidManifest.xml:15:13-37
 	android:name
-		ADDED from [rncourse:react-native-image-picker:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-image-picker/unspecified/AndroidManifest.xml:13:13-67
+		ADDED from [RASHPlaces:react-native-image-picker:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-image-picker/unspecified/AndroidManifest.xml:13:13-67
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [rncourse:react-native-image-picker:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-image-picker/unspecified/AndroidManifest.xml:17:13-19:58
+ADDED from [RASHPlaces:react-native-image-picker:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-image-picker/unspecified/AndroidManifest.xml:17:13-19:58
 	android:resource
-		ADDED from [rncourse:react-native-image-picker:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-image-picker/unspecified/AndroidManifest.xml:19:17-55
+		ADDED from [RASHPlaces:react-native-image-picker:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-image-picker/unspecified/AndroidManifest.xml:19:17-55
 	android:name
-		ADDED from [rncourse:react-native-image-picker:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/rncourse/react-native-image-picker/unspecified/AndroidManifest.xml:18:17-67
+		ADDED from [RASHPlaces:react-native-image-picker:unspecified] /Users/rayon/Documents/react-native/rn-course/android/app/build/intermediates/exploded-aar/RASHPlaces/react-native-image-picker/unspecified/AndroidManifest.xml:18:17-67
 android:uses-permission#android.permission.READ_PHONE_STATE
 IMPLIED from /Users/rayon/Documents/react-native/rn-course/android/app/src/main/AndroidManifest.xml:1:1-39:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
 android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
